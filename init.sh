@@ -6,9 +6,10 @@ then
   mkdir $DIRECTORY
 fi
 
-cp -R ./functions/ $DIRECTORY/
+cp ./functions/* $DIRECTORY/
 
 tee -a ~/.bash_profile <<- 'EOF'
+
 if [ -d ~/.bash_functions ]; then
   for file in ~/.bash_functions/*; do
     . "$file"
