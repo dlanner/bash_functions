@@ -1,4 +1,3 @@
-# http://stackoverflow.com/a/3571047
 pidenv() 
 {
   sudo cat /proc/${1:-self}/environ | xargs -n 1 -0
